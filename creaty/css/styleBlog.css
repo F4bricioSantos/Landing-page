@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+.header {
+display: flex;
+align-items: center;
+width: 100%;
+background-color: black;
+justify-content: space-between;
+padding: 10px 0;
+}
+
+.nav-left {
+display: flex;
+align-items: center;
+margin-left: 5%;
+}
+
+.logo {
+border-radius: 10px;
+width: 81px;
+height: 81px;
+}
+
+.branding {
+color: #ffffff;
+margin-left: 10px;
+}
+
+.creaty {
+font-size: 1.5em; 
+}
+
+.comunicacao {
+font-size: 1em; 
+margin-left: 19px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-icon {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 6px;
+}
+
+a {
+color: black;
+font-size: 1em; 
+margin: 18px;
+}
+
+.menu-icon {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+}
+
+.bar {
+width: 25px;
+height: 3px;
+background-color: white;
+}
+.section-blog{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+.buscar-form {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 40px;
+    width: 80%;
+    justify-content: end
+}
+
+.buscar-input {
+    padding: 10px;
+    border: 1px solid #DD9933;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: border-color 0.3s;
+    height: 50px;
+    min-width: 100px;
+    width:  700%;
+    max-width: 500px;
+}
+
+.buscar-input::placeholder {
+    color: #999;
+}
+
+.buscar-input:focus {
+    outline: none;
+    border-color: #DD9933;
+}
+
+.buscar-button {
+    padding: 10px 15px;
+    background-color: #DD9933;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+}
+
+.buscar-button:hover {
+    background-color: #0056b3;
+}
+
+
+#categorias{
+margin-top: 50px;
+margin-left: 80px;
+margin-bottom: 10px;
+border: 1px solid rgba(0, 0, 0, 0.300);
+display: flex;
+flex-direction: column;
+width: 90%;
+max-width: 250px;
+border-radius: 4px;
+}
+
+#categorias div{
+display: flex;
+align-items: center;
+
+}
+
+#categorias .titulo{
+font-size: 1.1em;
+background-color: rgba(177, 177, 177, 0.3);
+height: 29px;
+display: flex;
+align-items: center;
+padding-left: 15px;
+}
+
+#categorias .filtro button{
+color: #0B5ED7;
+text-decoration: underline;
+border: none;
+background-color: transparent;
+text-align: initial;
+font-size: 1em; 
+width: 100%;
+margin: 7px 15px;
+}
+
+
+.blog-container {
+    display: flex;
+    width: calc(80% + 10px);
+    max-width: 1661px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px; 
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    height: 63px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+    height: 48px;
+}
+
+.card-date {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+
+.card-more {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.card-more form{
+     justify-content: end;
+}
+
+.card-more button {
+    background-color: #DD9933;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.card-more a:hover {
+    background-color: #52006A;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    height: auto; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px; 
+}
+.footer-content {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 270px;
+}
+
+#creaty-footer {
+    font-size: 2em; 
+}
+
+#comunicacao-footer {
+    font-size: 1em; 
+    margin-left: 71px;
+    margin-top: 12px;
+}
+
+#hr {
+    border: none;
+    border: 2px solid #ffffff8a;
+    height: 191px;
+    margin: 0 56px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media p {
+    margin-bottom: 15px;
+}
+
+
+.social-icons a{
+    margin: 0 4px;
+}
+.social-icons img {
+    height: 42px;
+    width: 42px;
+}
+
+
+/* Responsividade */
+@media (max-width: 687px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex !important; 
+    }
+
+    .menu-icon {
+        display: flex; 
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; 
+    }
+
+    .menu-icon {
+        display: none; 
+    }
+}
